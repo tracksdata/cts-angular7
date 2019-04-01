@@ -23,5 +23,70 @@ UI Component designed based Frameworks
 2. React JS   - Facebook
 
 
+Request and Response 
+-------------------------
+
+Request
+---------
+-> Takes data from client and sends to spicified server
+-> It can send any type of data to a server.
+        -> Plan Text
+        -> JSON
+        -> XML
+        -> HTML (forms)
+
+Response
+----------
+-> Response object has data sent by a server
+-> Response data can be in any format
+-> Middleware progrming languages sends response data to client
+        -> Text
+        -> JSON
+        -> XML
+        -> HTML
+        -> application formatls like PDF, DOC, XLS , PPT etc
+        -> image
+
+
+HTTP status codes
+----------------------
+1x : 100 to 199  -> Information about your request, and response
+2x : 200 t 299   -> Success
+3x : 300 to 399  -> redirection
+4x : 400 to 499  -> Client side error
+5x : 500 to 599  -> Server side error
+
+
+
+HTML
+------
+-> Used to design web pages.
+-> Its mainly used to present the content. not formating the data
+
+CSS
+---
+-> used to format the data in the HTML/ styling the HTML data
+-> Designer has to write all the code to each styling in HTML
+
+Boot Strap:
+-------------
+-> CSS library 
+-> has many commonly used inbuilt css styls are present
+-> use to make pages as responsive
+-> Profesinnaly used designs are included from twitter
+
+Combining HTML, CSS and Bootstrap we can design any static web pages
+
+
+
+
+
+
+
+
+
+
+
+
 
 
