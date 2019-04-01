@@ -1,0 +1,27 @@
+User interface technoilogies
+1. Java Script
+2. HTML, CSS
+3. Bootstrap
+---------------------
+
+UI libraries
+1. Jqery
+2. Underscore JS
+3. Alax tool
+
+---------------------
+
+UI MVC design based Frameworks
+1. DOJO
+2. Ext JS
+3. Angular JS 1x
+
+----------------
+
+UI Component designed based Frameworks
+1. Angular 2x - Google
+2. React JS   - Facebook
+
+
+
+
