@@ -1,0 +1,86 @@
+JS Notes
+----------
+Web-ui
+-------
+UI => content/data + style + behavior
+
+Content ==> HTML
+Style   ==> CSS
+behavior==> Javascript
+
+-------------------------------
+What .js-lang can do on HTML page in browser environment?
+
+using browser provided web apis,
+JS can bring any dynamic activity to the web page
+
+Browser-APIs: ==> are based on 'w3c' recommendation,
+implemented by natively browser vendors and abstracted as JS objects and functions
+
+Browser-APIs:
+1. DOM (Document Object Model)
+2. XHR,Timer api .. etc
+
+Using DOM
+------------
+
+-> create, retrieve, update and delete HTML elements
+-> change HTML inner text/html content
+-> change elements attributes / properties
+-> change elements style (css)
+-> validate form-fields before submiting to the server-program
+-> can create rich UI-components like caledar , autocomplete etc
+-> we can listen any events on elements
+
+Using XHR (XML Http request object)
+-----------
+-> can communicate with server side programs async (Ajax)
+
+using Timer API
+------------------
+-> can execute any action on timeout/time-intervel
+
+
+
+What is Java Script?
+-----------------------
+-> client side language for web pages on browser
+-> server side language on Node.js
++
+-> Mobile native application with tool support
+-> Desktop applications with Electron
+-------------------------------------------------
+
+.js features
+-------------
+-> Functional programing and OOPS 
+-> Dynamic (data types)
+-> all IO opeartions by defaukt non blocking
+-> Single thread process, it can execute concurrent action while IO happening
+
+----------------------------------------------
+How to run .js programs?
+
+=> using java script runtime
+
+browser environment
+----------------------
+-> Chrome        => V8(c++)
+-> firefox       => Rhino/spider monkey (Java)
+-> IE/Edge       => Chakra
+-> Safari        => Nitro
+
+other environment
+------------------
+-> Node.js       => V8
+-> JVM           => Rhino/Nashorn
+
+
+.js language is based on 'ECMASCRIPT' Specifecation
+latest ES : ES6/ES7
+
+-------------------------------------------------
+
+Hello world demo on js
+
+-------------------------------------------------
