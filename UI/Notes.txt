@@ -152,7 +152,7 @@ problems/limitations with plain-js ( your-code ) with browser-apis
         component-arch based lib & F.w
         -----------------------------------------        
 
-        1. react.js    from facebook       : v16   ( our focus  )
+        1. react.js    from facebook       : v16 
         2. Angular     from google-team    : v7
 
         3. Vue.js
@@ -323,12 +323,41 @@ summary
 
 
 
-        - react-lib api
-        - case-study with react-only
-        - redux
-        - react-redux
-        - react design patterns
-        - tuning
-        - browser HTML5 APIs
-        - memory mamanagement & performance tuning
-        - freeze
+
+
+Angular Notes
+—————————————
+
+Angular 1x: Angular JS -> 1.7
+Angular 2x: Angular
+		-> Angular2
+		-> Angular4
+		-> Angular5
+		-> Angular6
+		-> Angular7
+		-> Angular8 -> sept 2019
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
