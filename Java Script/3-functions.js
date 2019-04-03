@@ -43,7 +43,6 @@ let s3=100;
 {
     let s3=400;
 }
-
 console.log(' s3: '+s3);
 
 console.log('s4: '+s4); // error
