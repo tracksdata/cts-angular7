@@ -1,10 +1,5 @@
 Angular 
 ----------------
-
-
-
-
-
 1-directives
 -------------------
 3-types
@@ -59,11 +54,19 @@ Angular
         syntax :
 
         <element [prop]="expression"/>
+        <a [href]="pathLoc">Go </a>
+
+        in  ts
+        pathLoc="https://www.google.com"
 
     3- event-binding
 
         syntax :
 
-            <element (event-name)="handler($event)"/>    
+            <element (event-name)="handler($event)"/>  
+            Ex: <button (click)="saveData($event)">Save </button>  
+
+4. Two Way binding
+    [(ngModel)] ==> Two way Binding
         
 
