@@ -1,0 +1,15 @@
+<div class="container mt-3">
+  <div class="alert alert-info text-center">
+  <h1> Parent Component</h1> 
+  <button class="btn btn-primary" (click)="greet()">Greet</button>
+  <hr/>
+      <h1>{{parentMessage}}</h1>
+  </div>
+
+  <div>
+
+    <app-greet [msg]=childMessage (parentMsg)="greetings($event)"> </app-greet>
+
+  </div>
+
+</div>

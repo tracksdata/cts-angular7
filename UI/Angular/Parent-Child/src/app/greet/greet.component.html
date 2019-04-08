@@ -1,0 +1,15 @@
+<div class="alert alert-success text-center">
+  <h1>Greet Component</h1>
+  <hr/>
+  <h2>User: {{adminName}} </h2>
+  <h2>City: {{cityName}}</h2>
+
+  <hr/>
+  <div>
+
+    <app-employee cityName="Delhi" [myUser]=adminName></app-employee>
+    <app-employee cityName="Pune" [myUser]=adminName></app-employee>
+
+
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="alert alert-success text-center">
+  <h1>Greet Component</h1>
+  <hr/>
+
+  <div class="alert alert-success" *ngIf="msg">
+    <h1> Message: {{msg}} </h1>
+    <hr/>
+    <button class="btn btn-danger" (click)="greetBack()">Greet Back</button>
+  </div>
+
+</div>
