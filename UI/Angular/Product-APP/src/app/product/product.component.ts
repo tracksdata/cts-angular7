@@ -16,6 +16,12 @@ export class ProductComponent implements OnInit {
   @Input()
   price:number;
 
+  btnStatus=true;
+
+  calculateTotal(){
+    this.btnStatus=false;
+  }
+
   ngOnInit() {
   }
 

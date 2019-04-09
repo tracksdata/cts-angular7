@@ -1,15 +1,25 @@
-<div class="card mt-2">
-<div class="card-header bg-primary">
-<h2>{{cardHeader}}</h2>
+<div class="row">
+<div class="col-4 col-md-4 lg-4">
+    <div class="card mt-2">
+        <div class="card-title bg-primary">
+        <h2>{{cardHeader}}</h2>
+        </div>
+        
+        <div class="card-body">
+        <div>
+          <h1>{{productName}}</h1> <hr/>
+          <span>Price: </span> <span class="badge bg-primary">{{price}}</span>
+          <hr/>
+        
+          <div *ngIf=btnStatus>
+              <button class="btn btn-success" (click)="calculateTotal()">Add to cart</button>
+          </div>
+          
+        </div>
+        </div>
+        
+        </div>
+</div>
+    
 </div>
 
-<div class="card-body">
-<div>
-  <h1>{{productName}}</h1> <hr/>
-  <span>Price: </span> <span class="badge bg-primary">{{price}}</span>
-  <hr/>
-  <button class="btn btn-success">Add to cart</button>
-</div>
-</div>
-
-</div>
