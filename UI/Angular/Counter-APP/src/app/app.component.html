@@ -7,13 +7,12 @@
       <h1>Counter APP</h1>
     </div>
 
-
     <div class="card-body text-center">
-
-      +10: <button class="btn btn-primary" (click)="counter()">{{count}}</button>
-      +20: <button class="btn btn-primary" (click)="counter()">{{count}}</button>
-      -5: <button class="btn btn-primary" (click)="counter()">{{count}}</button>
-      -20: <button class="btn btn-primary" (click)="counter()">{{count}}</button>
+      <app-counter [btnLable]=initialValue (noOfHits)="totalCount(10)" (click)="test(10)"></app-counter>
+      <app-counter btnLable="+20" (noOfHits)="totalCount(20)"></app-counter>
+      <app-counter [btnLable]=initialValue (noOfHits)="totalCount(-5)" (click)="test(-5)"></app-counter>
+      <app-counter btnLable="-10" (noOfHits)="totalCount(-10)"></app-counter>
+      
     </div>
 <br/>
     <div class="card-foter bg-info text-center">
@@ -22,17 +21,6 @@
 
   </div>
   <hr/>
-
-<div class="text-center">
-    <button class="btn btn-primary btn-space"> Click here</button>
-    <button class="btn btn-primary btn-space"> Click here</button>
-    <button class="btn btn-primary btn-space"> Click here</button>
-    <button class="btn btn-primary btn-space"> Click here</button>
-    <button class="btn btn-primary btn-space"> Click here</button>
-</div>  
-
-
-
 
 </div>
 

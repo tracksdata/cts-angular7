@@ -10,9 +10,14 @@ export class AppComponent {
 
   count=0;
   total=0;
-  counter(){
-    this.count=this.count+1;
+  initialValue=0;
+
+  test(data){
+    this.initialValue=data;
+  }
+  totalCount(countValue){
+    this.total=this.total+countValue;
     //console.log(this.count);
-    this.total=this.total+this.count;// wrong logic!
+    //this.total=this.total+this.count;// wrong logic!
   }
 }
