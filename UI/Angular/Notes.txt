@@ -80,5 +80,8 @@ GIT URL info
 User name : ctsjava
 Password: Cognizant#123
 
+File name: associte ID-Your Name-Application Name:
+Ex: 506388-Praveen-product-APP.zip
+
         
 
