@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -16,10 +16,20 @@ export class ProductComponent implements OnInit {
   @Input()
   price:number;
 
+  cart=new Array();
+
+  @Output()
+  cartProduct=new EventEmitter();
+
+
+
   btnStatus=true;
 
   calculateTotal(){
+    this.cart.push(this.productName);
+    this.cart.push(this.price);
     this.btnStatus=false;
+    this.cartProduct.emit(this.cart);
   }
 
   ngOnInit() {

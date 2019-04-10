@@ -68,5 +68,12 @@ Angular
 
 4. Two Way binding
     [(ngModel)] ==> Two way Binding
+
+
+Form mnagement
+------------------
+1. template driven forms
+2. reactive forms
+
         
 

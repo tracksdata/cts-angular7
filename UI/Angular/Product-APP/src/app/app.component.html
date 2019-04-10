@@ -5,15 +5,28 @@
 
 <div>
 
-  <app-product cardHeader="Dell Laptop" productName="Dell Lap-top" price="25000"></app-product>
-  <app-product cardHeader="Apple Laptop" productName="Apple Laptop" price="275000"></app-product>
+  <app-product cardHeader="Dell Laptop" productName="Dell Lap-top" price="25000" (cartProduct)="cartData($event)"></app-product>
+  <app-product cardHeader="Apple Laptop" productName="Apple Laptop" price="275000" (cartProduct)="cartData($event)"></app-product>
 
 </div>
 
 <hr/>
 
 <div class="alert alert-success text-center">
-<h1>Total Item Price: 0</h1>
+<h1>Total Item Price: {{total}}</h1>
 </div>
+
+
+
+    <div class="card">
+        <div *ngFor="let cart of cartProducts">
+        <div class="card-body">
+          <h2>{{cart}}</h2> 
+        </div>
+      
+      </div>
+      <button class="btn btn-primary">Remove Item</button>
+</div>
+
 
 </div>

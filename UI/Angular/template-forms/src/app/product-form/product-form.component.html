@@ -1,0 +1,64 @@
+
+
+<h1>{{product | json}}</h1>
+
+<div class="col-4">
+<div class="card">
+<div class="card-header">
+<h3>Product Form</h3>
+</div>
+
+<div class="card-body">
+        <form>
+        <div class="form-group">
+        <label>Product Id</label>
+        <input type="text" name="id" class="form-control" [(ngModel)]="product.id"/>  
+        </div>
+        
+        <div>
+            <label>Product Name</label>
+            <input type="text" name="name" class="form-control" [(ngModel)]="product.name"/>  
+        </div>
+        
+        <div>
+             <label>Price</label>
+              <input type="text" name="price" class="form-control"[(ngModel)]="product.price"/>  
+        </div>
+        
+        <div class="mt-3 text-center">
+            <button class="btn btn-primary" type="submit" (click)="handleForm(product)">Save</button>
+        </div>
+        
+        </form>
+        </div>
+</div>
+</div>
+<div class="table table-dark mt-3">
+
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+  </tr>
+
+</div>
+<hr/>
+<div class="table table-dark mt-3" *ngIf=showTable>
+
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>{{prod.id}}</td>
+      <td>{{prod.name}}</td>
+      <td>{{prod.price}}</td>
+    </tr>
+  
+  </div>
