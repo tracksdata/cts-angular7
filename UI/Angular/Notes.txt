@@ -84,4 +84,14 @@ File name: associte ID-Your Name-Application Name:
 Ex: 506388-Praveen-product-APP.zip
 
         
+NGFORM
+--------
 
+1. ng-touched
+2. ng-untouched
+3. ng-dirty
+4. ng-pristine : The Control value has not been changed
+5. ng-valid
+6. ng-invalid
+
+-------------------------------
