@@ -14,5 +14,16 @@
   <h1>Totay: {{today | date:'fullDate'}}</h1>
   <h1>Totay: {{today | date:'shortDate'}}</h1>
   <h1>Totay: {{today | date:'longDate'}}</h1>
+   <hr/>
+
+   <h1>Price in INR: {{price | currency:'INR' }}</h1>
+   <h1>Price in USD: {{price | currency:'USD' }}</h1>
+   <hr/>
+
+   <h1>Price: {{price | percent }}</h1>
+
+   <hr/>
+
+   <h1>{{ "Praveen" | slice:0:3 }}</h1>
 
 </div>

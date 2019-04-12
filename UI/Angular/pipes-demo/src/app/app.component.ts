@@ -10,6 +10,9 @@ export class AppComponent {
 
   name='praveen';
 
+  price=25000;
+  
+
   today=new Date();
 
   test(){
