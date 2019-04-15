@@ -23,9 +23,9 @@
     
 
     <div class="form-group text-center">
-        <button class="btn btn-primary"  type="submit">{{myObject.btnLable}}</button>
+        <button class="btn btn-primary btn-space"  type="submit">{{myObject.btnLable}}</button>
        <span *ngIf="myObject.isReadOnly">
-          <button class="btn btn-danger" type="button" (click)="changeButton()">Cancel</button>
+          <button class="btn btn-danger btn-space" type="button" (click)="changeButton()">Cancel</button>
        </span>
 
       <h3>{{myObject.isReadOnly}}</h3>
