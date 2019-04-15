@@ -1,0 +1,14 @@
+<div class="table" align="center">
+<tr>
+  <th>ID</th>
+  <th>Name</th>
+  <th>Salary</th>
+</tr>
+
+<tr *ngFor="let employee of employees">
+  <td (click)="populateForm(employee)" type="button">{{employee.id}}</td>
+  <td>{{employee.name}}</td>
+  <td>{{employee.salary}}</td>
+</tr>
+
+</div>

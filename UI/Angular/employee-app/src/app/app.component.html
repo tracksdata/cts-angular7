@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="alert alert-info text-center mt-3">
+    <h1>Employee APP</h1>
+  </div>
+
+  <div class="row">
+
+    <div class="col-4">
+      <app-emp-form [myObject]="myObject"></app-emp-form>
+    </div>
+
+    <div class="col-8">
+      <app-emp-list  (parentData)="manageProperties($event)"></app-emp-list>
+    </div>
+
+
+  </div>
+
+
+
+</div>

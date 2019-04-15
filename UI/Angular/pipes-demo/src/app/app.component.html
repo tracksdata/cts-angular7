@@ -7,7 +7,7 @@
 
   <hr/>
 
-  <h1>Name: {{name | uppercase}}</h1>
+  <h1>Name: {{name | uppercase | slice:0:2}}</h1>
   <h1>Name: {{name | lowercase}}</h1>
   <h1>Name: {{name | json}}</h1>
   <h1>Totay: {{today | date}}</h1>
@@ -24,6 +24,8 @@
 
    <hr/>
 
-   <h1>{{ "Praveen" | slice:0:3 }}</h1>
+   <h1>{{ "Praveen" | slice:0:3}}</h1>
 
 </div>
+
+
