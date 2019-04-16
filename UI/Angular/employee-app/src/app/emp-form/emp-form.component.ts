@@ -10,7 +10,7 @@ import { Employee } from '../employee';
 })
 export class EmpFormComponent implements OnInit {
 
- employees=new Array();
+ employees=new Array<Employee>();
   employee:Employee;
   found=false;
 
@@ -23,34 +23,25 @@ export class EmpFormComponent implements OnInit {
   constructor(private service:EmployeeService) { }
 
   handleForm(empForm:NgForm){
-
     // list all the records from array -> EmployeeService
    this.employees=this.service.listAll();
-
-
    // get lable name and call this lopp if the lable is update
    if(this.myObject.btnLable=="Update")
    this.employees.map((employee,index)=>{
      if(employee.id==empForm.value.id){
        this.employees[index]=empForm.value;
-        this.found=true;
+       this.found=true;
        this.myObject.isReadOnly=false;
        this.myObject.btnLable='Save';
-       this.service.empForm={
-         id:null,
-         name:null,
-         salary:null
-       }
+       return false;
      }
-      return false;
    });
+
 
    if(!this.found)
     this.service.addEmployee(empForm.value);
     this.resetForm(empForm);
     this.found=false;
-   
-
   }
 
   changeButton(){

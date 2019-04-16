@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { EmployeeService } from '../employee.service';
 import { Employee } from '../employee';
 
@@ -13,15 +13,17 @@ export class EmpListComponent implements OnInit {
 
   employees:any;
 
-  myObject={
-    btnLable:'Update',
-    isReadOnly:true
-  }
-
+  @Input()
+  myObject={}
   @Output()
   parentData=new EventEmitter();
 
   populateForm(employee:Employee){
+    this.myObject={
+      btnLable:'Update',
+      isReadOnly:true
+    }
+
     this.service.empForm=Object.assign({},employee);
    // this.service.empForm=employee;
    this.parentData.emit(this.myObject);

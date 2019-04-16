@@ -95,3 +95,18 @@ NGFORM
 6. ng-invalid
 
 -------------------------------
+
+
+
+
+Reactive forms
+----------------
+
+-> Bind the Template data to the form component / app component directy
+-> So that we can avoid usage of 2-way binding 
+-> Validations part is very easy
+
+-> FormGroup
+-> 
+
+
