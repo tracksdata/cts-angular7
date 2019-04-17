@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">item(s) in cart</div>
+    <div class="card-body">
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr *ngFor="let line of cartLines">
+            <td>{{line.item.name}}</td>
+            <td>{{line.item.price}}</td>
+            <td>{{line.qty}}</td>
+            <td>{{line.item.price*line.qty}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

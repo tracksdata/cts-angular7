@@ -1,0 +1,37 @@
+<div class="container">
+
+  <div class="alert alert-info text-center mt-3"><h1>Product APP</h1></div>
+
+
+  <div class="row">
+
+    <div class="col-2">
+
+        <ul class="nav flex-column">
+            <li class="nav-item">
+             <a class="nav-link" routerLink="">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="product-form">Add</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="product-list">Display</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="product-review">Review</a>
+            </li>
+          </ul>
+
+    </div>
+
+    <div class="col-10">
+        
+      <router-outlet></router-outlet>
+      
+     
+    </div>
+
+  </div>
+
+
+</div>

@@ -1,0 +1,24 @@
+
+
+
+
+Arch.. issues
+----------------------
+
+===> state/model/ui-data is scattered across UI components
+===> state & state-change logic & network/service calls 
+     are tightly-coupled with UI components
+===> if same state is required in multiple components 
+     either we should duplicate that state in components or we should pass via input properties 
+===> Unit-Testing is very difficult in components
+===> we cant re-use same components across diffent pages or applications
+
+
+
+soln:
+
+   ==> isolate common state & state change logic & n/wing logic from UI components
+
+ How ?
+
+   in NG , using NG service classes   or using Redux

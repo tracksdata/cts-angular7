@@ -1,0 +1,17 @@
+<app-navbar [title]="title"></app-navbar>
+<hr />
+<app-cart-badge [value]="cartSize"></app-cart-badge>
+<hr />
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a (click)="toggleCart($event)" class="nav-link" href="/">
+                {{isCartOpen?'Products':'Cart'}}
+            </a>
+        </li>
+    </ul>
+</div>
+<hr />
+<app-cart-view *ngIf="isCartOpen" [cart]="cart"></app-cart-view>
+<hr />
+<app-product-list *ngIf="!isCartOpen" [cart]="cart" (buy)="addToCart($event)"></app-product-list>

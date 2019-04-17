@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import {FormGroup, FormBuilder, Validators, PatternValidator} from '@angular/forms';
+import { flushMicrotasks } from '@angular/core/testing';
 
 @Component({
   selector: 'app-root',
@@ -17,9 +18,10 @@ export class AppComponent implements OnInit{
    name='James';
    ngOnInit(){
     
+    
       this.empForm=this.fb.group(
         {
-          id:[],
+          id:['',Validators.required],
           name:['',Validators.required],
           salary:[0.0]
         }

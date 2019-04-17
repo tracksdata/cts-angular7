@@ -16,7 +16,7 @@
 
       <div class="form-group">
         <label>ID</label>
-        <input type="text" name="id" formControlName="id" class="form-control" required>
+        <input type="text" name="id" formControlName="id" required class="form-control">
       </div>
 
       <div class="form-group">
@@ -39,6 +39,6 @@
 </div>
 </div>
 <hr/>
-<h2>test: {{empForm.valid}}</h2>
+<h2>test: {{fm.id.errors.required}}</h2>
 <h2>test1: {{empForm.get('id').touched}}</h2>
 </div>

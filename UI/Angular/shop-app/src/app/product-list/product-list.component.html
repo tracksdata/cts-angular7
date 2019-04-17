@@ -1,0 +1,10 @@
+<div class="container">
+
+  <div *ngFor="let prod of products|slice:0:100;let idx=index" class="list-group-item">
+    <app-product [cart]="cart" [product]="prod" (buy)="handleBuy($event)"></app-product>
+    <!-- <pre>{{prod|json}}</pre> -->
+  </div>
+
+
+
+</div>
