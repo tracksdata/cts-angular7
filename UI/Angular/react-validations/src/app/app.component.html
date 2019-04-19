@@ -1,0 +1,28 @@
+<form (ngSubmit)="submit(formName)" [formGroup]="formName" class="container">
+  <div class="form-group">
+     <div class="row">
+        <div class="col-md-6">
+          <label for="">SSN Number</label>
+           <input #mv formControlName="numberInput" type="text" class="form-control">
+           <span *ngIf="fn.numberInput.invalid">
+             Invalid Phone Number. Mus be in (123) 123-1234 format
+            </span>
+        </div>
+     </div>
+     <div class="row">
+        <div class="col-md-6">
+            <label for="">Company Review</label>
+            <textarea formControlName="reviews" class="form-control"></textarea>
+            <span *ngIf="true">Bad Words Not allowed</span>
+          </div>
+
+      
+     </div>
+    
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="formName.invalid">Submit</button>
+</form>
+
+<h2>
+ TEST: {{!fn.numberInput.invalid}}
+</h2>

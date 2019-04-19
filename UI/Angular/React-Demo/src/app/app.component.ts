@@ -16,14 +16,20 @@ export class AppComponent implements OnInit{
    constructor(private fb:FormBuilder){}
 
    name='James';
+
+   get fm(){
+     return this.empForm.controls;
+   }
    ngOnInit(){
     
     
+
       this.empForm=this.fb.group(
         {
           id:['',Validators.required],
           name:['',Validators.required],
-          salary:[0.0]
+          salary:[0.0],
+          password:['',Validators.required,Validators.minLength,Validators.maxLength]
         }
       )
    }
