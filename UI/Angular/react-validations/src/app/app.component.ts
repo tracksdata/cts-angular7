@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { myCustomValidations } from '.';
 
 class CustomValidator{
 
@@ -43,17 +44,33 @@ static numberValidator(ssn): any {
 export class AppComponent {
   formName: FormGroup;
   submitted = false;
-  badWprds=['Idiot','Stupid','bad','praveen','prabhu'];
   names=['prabhu','praveen'];
 
 
   constructor(private fb: FormBuilder) { }
-
+  errors:any=[];
   ngOnInit() {
     this.formName = this.fb.group({
        numberInput: ['', [CustomValidator.phoneValidator]],
-       reviews:['']
+       review:[null,[Validators.required,myCustomValidations]]
     });
+
+    let reviewControl=this.formName.get('review');
+
+    
+   // let bodyControl=this.formName.get
+
+    reviewControl.statusChanges // stream
+    .subscribe(asdf=>{
+       
+      if(asdf==="INVALID"){
+         if(reviewControl.errors.bad){
+            this.errors['body']='Bad Words Not Allowed';
+         }
+      }else{
+         this.errors['body']='';
+      }
+   })
  }
 
   get fn(){
